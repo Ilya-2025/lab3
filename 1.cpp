@@ -61,12 +61,12 @@ public:
     }
 private:
     string getResult() const {
-        if (player1.choice == player2.choice) return "Ничья!";
+        if (player1.choice == player2.choice) return "--- Ничья! ---";
         if ((player1.choice == Choice::Rock && player2.choice == Choice::Scissors) ||
             (player1.choice == Choice::Paper && player2.choice == Choice::Rock) ||
             (player1.choice == Choice::Scissors && player2.choice == Choice::Paper))
-            return "Вы победили!";
-        return "Комп победил!";
+            return "--- Вы победили! ---";
+        return "--- Комп победил! ---";
     }
 };
 
